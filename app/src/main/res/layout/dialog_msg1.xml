@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@drawable/dialog_price_background"
+    android:paddingBottom="30dp"
+    android:paddingTop="30dp"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/main_logo_warning1"/>
+
+
+    <TextView
+        android:id="@+id/dialog_msg1_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        fontPath="fonts/Yekan_Bakh_Bold.ttf"
+        android:text="موجودی ناکافی"
+        android:textColor="@color/tire0"
+        />
+
+    <TextView
+        android:id="@+id/dialog_msg1_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        fontPath="fonts/Yekan_Bakh_Light.ttf"
+        android:text="مبلغ بیشتر از موجودی کیف پول شماست"
+        android:textColor="@color/khakestari1"
+        />
+
+
+    <com.skydoves.elasticviews.ElasticLayout
+        android:id="@+id/dialog_msg1_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_scale="0.95"
+        app:layout_duration="200"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <com.gigamole.library.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:sl_shadowed="true"
+            app:sl_shadow_angle="90"
+            app:sl_shadow_radius="10dp"
+            app:sl_shadow_distance="10dp"
+            app:sl_shadow_color="@color/Abi1_shadow">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/btn_back1"
+                android:padding="15dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="بسیار خب"
+                    android:textColor="@color/sefid"
+                    fontPath="fonts/Yekan_Bakh_Bold.ttf"
+                    android:textSize="16sp"
+                    />
+
+
+            </LinearLayout>
+
+        </com.gigamole.library.ShadowLayout>
+
+
+    </com.skydoves.elasticviews.ElasticLayout>
+
+
+
+
+</LinearLayout>

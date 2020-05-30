@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sefid"
+   >
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:id="@+id/user_more_arctop"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@drawable/z_header_user"
+        android:elevation="4dp"
+        app:shape_arc_cropDirection="outside"
+        app:shape_arc_height="40dp"
+        app:shape_arc_position="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:id="@+id/user_more_menuicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:scaleType="center"
+                app:materialIcon="dots_vertical"
+                app:materialIconColor="@color/sefid"
+                app:materialIconSize="26dp" />
+
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:id="@+id/user_more_markicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:scaleType="center"
+                android:visibility="invisible"
+                app:materialIcon="bookmark_outline"
+                app:materialIconColor="@color/sefid"
+                app:materialIconSize="26dp" />
+
+
+        </LinearLayout>
+
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+
+
+    <com.github.florent37.shapeofview.shapes.CircleView
+        android:id="@+id/user_more_circleimage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/user_more_arctop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-60dp"
+        android:elevation="4dp"
+        app:shape_circle_borderColor="@color/sefid"
+        app:shape_circle_borderWidth="2dp">
+
+        <ImageView
+            android:id="@+id/user_more_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@color/sefid"
+            android:src="@drawable/avatar_tmp1" />
+
+    </com.github.florent37.shapeofview.shapes.CircleView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_more_prog"
+        android:visibility="visible"
+        android:layout_centerInParent="true"/>
+
+    <ScrollView
+        android:id="@+id/user_more_mainscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/user_more_line1_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <net.steamcrafted.materialiconlib.MaterialIconView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="3dp"
+                        android:scaleType="center"
+                        app:materialIcon="telegram"
+                        android:background="@drawable/circle_abi"
+                        android:layout_marginRight="10dp"
+                        app:materialIconColor="@color/sefid"
+                        app:materialIconSize="26dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user_more_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/tire0"
+                        android:text="دکتر ایرج رضایی"
+                        android:gravity="center"
+                        fontPath="fonts/sansB.ttf"
+                        />
+
+                    <TextView
+                        android:id="@+id/user_more_shortdes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/khakestari2"
+                        android:text="روانشناس کودک"
+                        android:gravity="center"
+                        android:lines="2"
+                        fontPath="fonts/sansL.ttf"
+                        android:textSize="10sp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+
+                    <net.steamcrafted.materialiconlib.MaterialIconView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="3dp"
+                        android:scaleType="center"
+                        app:materialIcon="video"
+                        android:background="@drawable/circle_abi"
+                        android:layout_marginRight="10dp"
+                        app:materialIconColor="@color/sefid"
+                        app:materialIconSize="26dp" />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/khakestari1"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:weightSum="100"
+                android:gravity="right"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="توضیحات"
+                    android:textColor="@color/tire0"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/user_more_longdes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="امیرمهدی یوسفی کیان ؛ روانشناس و روان درمانگر ؛ نویسنده و محقق ؛ دانش آموخته حوزه سکستراپی و هیپنوتراپیست و کاندیدای دکتری روانشناسی دانشگاه کلگری کانادا ؛ عضو انجمن روانشناسی ایران و آمریکا و انجمن هیپنوتیزم بالینی ایران ؛ مدرس بین المللی در حوزه ان ال پی و کوچینگ و عضو انجمن ان ال پی (IN) واقع در کشور آلمان و انجمن جهانی کوچینگ اروپا (ICI) می باشد . وی همچنین دارای دکتری حرفه ای مهارتی کسب و کار (DBA) بوده و مدیرعامل شرکت تلاشگران سبز شفق و رئیس هیأت مدیره شرکت ناجیان سبز ابتکار می باشد و سالها در حوزه منابع انسانی و خدمات عمومی مشغول به فعالیت بوده است و اکنون به طور تخصصی در حوزه مربیگری زندگی و کسب و کار و پیاده سازی تکنیکهای ان ال پی بر روی این حوزه فعالیت می کند ."
+                    android:textColor="@color/khakestari4"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    fontPath="fonts/sansL.ttf"
+                    android:lineSpacingExtra="5dp"
+                    android:gravity="right"
+                    android:textSize="11sp"
+                    />
+
+                <TextView
+                    android:id="@+id/user_more_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/khakestari4"
+                    android:layout_marginTop="10dp"
+                    android:text="شماره تلفن :"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    fontPath="fonts/sansL.ttf"
+                    android:lineSpacingExtra="5dp"
+                    android:gravity="right"
+                    android:textSize="11sp"
+                    />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/user_more_tags_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/khakestari1"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/upload_frame1">
+
+
+            <LinearLayout
+                android:id="@+id/row_sa_docs_placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_icon_plus2"
+                    />
+                <TextView
+                    android:id="@+id/row_sa_docs_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="افزودن"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:textColor="@color/khakestari0"
+                    android:textSize="14dp"
+                    fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/row_sa_docs_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>

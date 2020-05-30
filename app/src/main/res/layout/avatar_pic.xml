@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="30dp"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/avatar_pic_changearea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+
+
+
+            <com.github.florent37.shapeofview.shapes.CircleView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                app:shape_circle_borderColor="@android:color/white"
+                app:shape_circle_borderWidth="2dp">
+
+                <ImageView
+                    android:id="@+id/avatar_pic_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/avatar_tmp1" />
+            </com.github.florent37.shapeofview.shapes.CircleView>
+
+            <TextView
+                android:id="@+id/avatar_pic_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="برای تغییر تصویر کلیک کنید"
+                android:textColor="@color/tire0"
+                android:padding="10dp"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

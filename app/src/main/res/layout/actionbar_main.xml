@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="#f7f7f7"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/actionbar_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:text="عنوان"
+        android:textColor="@color/tire0"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+
+    <net.steamcrafted.materialiconlib.MaterialIconView
+        android:id="@+id/actionbar_main_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        app:materialIcon="chevron_right"
+        app:materialIconColor="@color/tire0"
+        app:materialIconSize="28dp" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+
+
+        <ImageView
+            android:id="@+id/row_sa_catsitem_tick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_icon_bluecheck"
+             />
+
+
+        <TextView
+            android:id="@+id/row_sa_catsitem_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:textColor="@color/khakestari0"
+            android:layout_marginRight="6dp"
+            android:textSize="14sp"
+            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+            android:text="TextView" />
+
+
+
+        <ImageView
+            android:id="@+id/row_sa_catsitem_icon"
+            android:layout_height="wrap_content"
+            android:layout_width="25dp"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/autism" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari_20darsad"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</LinearLayout>

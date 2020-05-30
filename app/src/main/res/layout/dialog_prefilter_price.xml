@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@drawable/dialog_price_background"
+    android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="7dp"
+                android:background="@drawable/dialog_prefilter_price_headerline"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dialog_prefilter_price_list"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

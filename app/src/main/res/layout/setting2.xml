@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:paddingTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:paddingBottom="20dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/setting2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/tire0"
+            android:textSize="18sp"
+            fontPath="fonts/Yekan_Bakh_Heavy.ttf"
+            android:text="تنظیمات"/>
+
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/setting2_actionbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_icon"
+            android:background="@drawable/login_phone_edittext"
+            android:padding="10dp"
+            android:adjustViewBounds="true"
+            app:imageView_duration="200"
+            app:imageView_scale="0.85"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/setting2_item1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+            <Switch
+                android:id="@+id/setting2_item1_sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/setting2_item1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/khakestari0"
+                fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                android:textSize="14sp" />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari_20darsad"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/setting2_item2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+
+            <Switch
+                android:id="@+id/setting2_item2_sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/setting2_item2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/khakestari0"
+                fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                android:textSize="14sp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari_20darsad"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/setting2_item3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+
+
+            <Switch
+                android:id="@+id/setting2_item3_sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/setting2_item3_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/khakestari0"
+                fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                android:textSize="14sp"/>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari_20darsad"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/setting2_item4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+
+
+            <Switch
+                android:id="@+id/setting2_item4_sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/setting2_item4_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/khakestari0"
+                fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                android:textSize="14sp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari_20darsad"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/setting2_item5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+
+
+
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:id="@+id/setting2_item5_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:materialIcon="chevron_left"
+                android:layout_marginLeft="10dp"
+                app:materialIconColor="@color/khakestari4"
+                app:materialIconSize="28dp" />
+
+
+            <TextView
+                android:id="@+id/setting2_item5_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/khakestari0"
+                fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                android:textSize="14sp" />
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari_20darsad"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/setting2_item6"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+
+
+
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:id="@+id/setting2_item6_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:materialIcon="chevron_left"
+                app:materialIconColor="@color/khakestari4"
+                android:layout_marginLeft="10dp"
+                app:materialIconSize="28dp" />
+
+            <TextView
+                android:id="@+id/setting2_item6_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/khakestari0"
+                fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                android:textSize="14sp" />
+
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:id="@+id/setting2_item6_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:materialIcon="telegram"
+                app:materialIconColor="@color/khakestari4"
+                app:materialIconSize="28dp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari_20darsad"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+
+</LinearLayout>

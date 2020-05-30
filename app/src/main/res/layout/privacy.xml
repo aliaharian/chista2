@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<layout>
+    <data>
+        <variable
+            name="privecyModel"
+            type="com.nikandroid.chista.viewModels.PrivecyViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/privecy_headerarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="حریم خصوصی"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/siyah"
+                    android:textSize="24sp"
+                    fontPath="fonts/YekanM2.ttf"/>
+
+                <net.steamcrafted.materialiconlib.MaterialIconView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    app:materialIcon="security"
+                    app:materialIconColor="@color/tire1"
+                    app:materialIconSize="120dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/privecy_headerarea"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/privecy_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" \n ***********\n***********\n*****"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/siyah"
+                    android:gravity="right"
+                    android:lineSpacingExtra="5dp"
+                    android:textSize="12sp"
+                    />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+        <ProgressBar
+            android:id="@+id/privecy_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            />
+
+
+
+    </RelativeLayout>
+
+</layout>

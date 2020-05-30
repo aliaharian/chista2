@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nikandroid.chista">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        tools:node="remove" />
+
+    <application
+        android:name=".Utils.App"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".Activity.Adviser_edits" />
+        <activity android:name=".Activity.Fav" />
+        <activity android:name=".Activity.Mycomments" />
+        <activity android:name=".Activity.credit2" />
+        <activity android:name=".Activity.user_edits" />
+        <activity android:name=".Activity.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.prefilter2" />
+        <activity android:name=".Activity.Submit_Adviser" />
+        <activity android:name=".Activity.Privacy" />
+        <activity android:name=".Activity.Rules" />
+        <activity android:name=".Activity.Helps" />
+        <activity android:name=".Activity.Score" />
+        <activity android:name=".Activity.Transaction" />
+        <activity android:name=".Activity.Credit" />
+        <activity android:name=".Activity.select_city" />
+        <activity android:name=".Activity.adviser_list" />
+        <activity android:name=".Activity.user_more" />
+        <activity android:name=".Activity.media_show" />
+        <activity android:name=".Activity.setting_user" />
+        <activity android:name=".Activity.setting2" />
+        <activity android:name=".Activity.setting" />
+        <activity android:name=".Activity.search" />
+        <activity android:name=".Activity.prefilter" />
+        <activity android:name=".Activity.new_comments" />
+        <activity android:name=".Activity.comments" />
+        <activity android:name=".Activity.Main" />
+        <activity android:name=".Activity.user" />
+        <activity android:name=".Activity.avatar_pic" />
+        <activity android:name=".Activity.login" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+
+</manifest>

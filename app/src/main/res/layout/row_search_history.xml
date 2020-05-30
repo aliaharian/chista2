@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/row_search_history_iconarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            app:materialIcon="chevron_left"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"
+            app:materialIconColor="@color/khakestari1"
+            app:materialIconSize="22dp" />
+
+
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/row_search_history_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            android:scaleType="center"
+            app:materialIcon="close"
+            app:materialIconColor="@color/khakestari1"
+            app:materialIconSize="22dp" />
+
+
+        <LinearLayout
+            android:id="@+id/row_search_history_lll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:gravity="right|bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/row_search_history_text"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:text="histori"
+                android:textColor="@color/khakestari1"
+                android:gravity="right|center_vertical"/>
+
+            <TextView
+                android:id="@+id/row_search_history_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="histori"
+                android:textSize="11sp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/khakestari1"
+                android:gravity="right|center_vertical"/>
+
+        </LinearLayout>
+
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/row_search_history_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:scaleType="center"
+            app:materialIcon="clock"
+            app:materialIconColor="@color/khakestari3"
+            app:materialIconSize="22dp" />
+
+
+        <com.github.florent37.shapeofview.shapes.CircleView
+            android:id="@+id/row_search_history_imgcircle"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            app:shape_circle_borderColor="@color/khakestari1"
+            android:background="@color/sefid"
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="-10dp"
+            app:shape_circle_borderWidth="3px">
+
+            <com.github.florent37.shapeofview.shapes.CircleView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shape_circle_borderColor="@color/sefid"
+                android:background="@color/sefid"
+                app:shape_circle_borderWidth="7px">
+
+                <ImageView
+                    android:id="@+id/row_search_history_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/avatar_tmp1" />
+
+            </com.github.florent37.shapeofview.shapes.CircleView>
+
+        </com.github.florent37.shapeofview.shapes.CircleView>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/khakestari_20darsad"/>
+
+
+
+
+
+
+
+</LinearLayout>

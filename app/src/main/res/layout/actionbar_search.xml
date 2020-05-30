@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/actionbar_search_manlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/actionbar_search_word"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/main_heder_seach_line"
+        android:textSize="12sp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingRight="35dp"
+        android:hint="نام یا تخصص مورد نظر را سرچ کنید"
+        android:imeOptions="actionSearch"
+        android:textColor="@color/tire0"
+        android:gravity="right|center_vertical"
+        android:singleLine="true"
+        android:textColorHint="#888888"
+
+        />
+
+    <net.steamcrafted.materialiconlib.MaterialIconView
+        android:id="@+id/actionbar_search_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@id/actionbar_search_word"
+        android:layout_alignBottom="@id/actionbar_search_word"
+        android:scaleType="center"
+        app:materialIcon="chevron_right"
+        app:materialIconColor="@color/khakestari4"
+        app:materialIconSize="26dp" />
+
+
+    <net.steamcrafted.materialiconlib.MaterialIconView
+        android:id="@+id/actionbar_search_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_alignTop="@id/actionbar_search_word"
+        android:layout_alignBottom="@id/actionbar_search_word"
+        android:scaleType="center"
+        app:materialIcon="close"
+        android:visibility="invisible"
+        app:materialIconColor="@color/khakestari4"
+        app:materialIconSize="24dp" />
+
+
+
+</RelativeLayout>

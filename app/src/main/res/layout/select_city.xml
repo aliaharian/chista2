@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/selectcity_searcharea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/selectcity_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="جستجو"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:textColor="@color/tire0"
+            />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/select_city_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/selectcity_searcharea"
+        />
+
+
+
+    <ProgressBar
+        android:id="@+id/select_city_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+
+
+
+
+
+</RelativeLayout>

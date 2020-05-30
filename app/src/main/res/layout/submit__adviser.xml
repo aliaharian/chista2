@@ -1,0 +1,1609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="submitadviserModel"
+            type="com.nikandroid.chista.viewModels.SubmitAdviserViewModel" />
+    </data>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Submit_Adviser">
+
+
+
+    <LinearLayout
+        android:id="@+id/submit_adviser_actionbararea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:paddingTop="20dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginLeft="32dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/sa_actionbar_pageprog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/main_progressstep1"/>
+
+            <TextView
+                android:id="@+id/sa_actionbar_pagetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/Abi7"
+                android:textSize="14sp"
+                fontPath="fonts/Yekan_Bakh_Bold.ttf"
+                android:text="2 / 2"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/tire0"
+            android:textSize="18sp"
+            fontPath="fonts/Yekan_Bakh_Heavy.ttf"
+            android:text="ثبت نام به عنوان مشاور"/>
+
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/submitadviser_actionbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_icon"
+            android:background="@drawable/login_phone_edittext"
+            android:padding="10dp"
+            android:adjustViewBounds="true"
+            app:imageView_duration="200"
+            app:imageView_scale="0.85"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:id="@+id/sa_mainscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/submit_adviser_actionbararea"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="30dp"
+            android:orientation="vertical">
+
+
+<!--            page 1-->
+            <LinearLayout
+                android:id="@+id/submitadviser_step1area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="35dp"
+                android:paddingLeft="35dp"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sa_tv_step1label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="مشخصات زیر را وارد نمایید ، این اطلاعات می بایست لزوما متعلق به مالک شماره تلفن همراه ۰۹۱۲۱۰۱۰۹۹۹ باشد"
+                    fontPath="fonts/Yekan_Bakh_Regular.ttf"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/khakestari0"/>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="right"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/simple_circle_red"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="نام"
+                            android:textColor="@color/khakestari1"
+                            android:textSize="13sp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/main_heder_seach_line"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/sa_et_name"                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:hint="نام"
+                            android:gravity="right|center_vertical"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                            android:textColor="@color/khakestari0"
+                            android:background="@drawable/prefilter_search_edittext_back"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/main_icon_user"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/simple_circle_red"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="نام خانوادگی"
+                            android:textColor="@color/khakestari1"
+                            android:textSize="13sp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/main_heder_seach_line"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/sa_et_family"                   android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:hint="نام خانوادگی"
+                            android:gravity="right|center_vertical"
+                            android:inputType="text"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:singleLine="true"
+                            android:layout_marginRight="10dp"
+                            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                            android:textColor="@color/khakestari0"
+                            android:background="@drawable/prefilter_search_edittext_back"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/main_icon_user"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/simple_circle_red"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="جنسیت"
+                            android:textColor="@color/khakestari1"
+                            android:textSize="13sp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/sa_ll_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/main_heder_seach_line"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sa_tv_sex"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:hint="جنسیت"
+                            android:gravity="right|center_vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                            android:textColor="@color/khakestari0"
+                            android:background="@drawable/prefilter_search_edittext_back"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/main_icon_sex"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/simple_circle_red"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="تاریخ تولد"
+                            android:textColor="@color/khakestari1"
+                            android:textSize="13sp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/sa_ll_bdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/main_heder_seach_line"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sa_tv_bdatename"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:hint="تاریخ تولد"
+                            android:gravity="right|center_vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                            android:textColor="@color/khakestari0"
+                            android:background="@drawable/prefilter_search_edittext_back"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/main_icon_calendar"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/simple_circle_red"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="کد ملی"
+                            android:textColor="@color/khakestari1"
+                            android:textSize="13sp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/main_heder_seach_line"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/sa_et_codemai"                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:textSize="13sp"
+                            android:hint="کد ملی"
+                            android:gravity="right|center_vertical"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                            android:textColor="@color/khakestari0"
+                            android:background="@drawable/prefilter_search_edittext_back"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/main_icon_userprofile"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/simple_circle_red"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="شماره شبا"
+                            android:textColor="@color/khakestari1"
+                            android:textSize="13sp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/main_heder_seach_line"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/sa_et_sheba"                         android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:textSize="13sp"
+                            android:hint="شماره شبا"
+                            android:gravity="right|center_vertical"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                            android:textColor="@color/khakestari0"
+                            android:background="@drawable/prefilter_search_edittext_back"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/main_icon_bank"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+<!--            page 2-->
+            <LinearLayout
+                android:id="@+id/submitadviser_step2area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:paddingRight="35dp"
+                android:paddingLeft="35dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="right"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/simple_circle_red"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="گروه"
+                            android:textColor="@color/khakestari1"
+                            android:textSize="13sp"
+                            android:layout_marginRight="5dp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/sa_ll_selectcats"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/main_heder_seach_line"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sa_tv_catsname"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="گروه"
+                            android:gravity="right|center_vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                            android:textColor="@color/khakestari0"
+                            android:background="@drawable/prefilter_search_edittext_back"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/main_icon_caticon1"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="right"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/simple_circle_red"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="دسته ها"
+                            android:textColor="@color/khakestari1"
+                            android:textSize="13sp"
+                            android:layout_marginRight="5dp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/sa_ll_selectsubcats"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/main_heder_seach_line"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sa_tv_subcatsname"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="دسته ها"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                            android:textColor="@color/khakestari0"
+                            android:background="@drawable/prefilter_search_edittext_back"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/main_icon_listcats"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="right"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/simple_circle_red"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="برچسب ها"
+                            android:textColor="@color/khakestari1"
+                            android:textSize="13sp"
+                            android:layout_marginRight="5dp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/sa_ll_selecttags"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/main_heder_seach_line"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sa_tv_tagsname"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="برچسب ها"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                            android:textColor="@color/khakestari0"
+                            android:background="@drawable/prefilter_search_edittext_back"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/main_icon_tag1"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+<!--            page 3-->
+            <LinearLayout
+                android:id="@+id/submitadviser_step3area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:paddingRight="35dp"
+                android:paddingLeft="35dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="right"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/simple_circle_red"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="شهر"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/khakestari1"
+                            android:textSize="13sp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/sa_ll_ostan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/main_heder_seach_line"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sa_ll_ostanname"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="انتخاب کنید"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                            android:textColor="@color/khakestari0"
+                            android:background="@drawable/prefilter_search_edittext_back"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/main_icon_mappin"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="right"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/sa_tv_field_limit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=" "
+                            android:textColor="@color/khakestari1"
+                            android:textSize="11sp"
+                            android:gravity="left"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:layout_marginBottom="10dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/simple_circle_red"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="جمله معرفی"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/khakestari1"
+                            android:textSize="13sp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/main_heder_seach_line"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/sa_et_field"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:hint="جمله معرفی"
+                            android:gravity="right|center_vertical"
+                            android:maxLength="25"
+                            android:singleLine="true"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                            android:textColor="@color/khakestari0"
+                            android:background="@drawable/prefilter_search_edittext_back"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/main_icon_news2"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="right"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/simple_circle_red"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="هزینه مشاوره"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/khakestari1"
+                            android:textSize="13sp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/main_heder_seach_line"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="تومان"
+                            android:textColor="@color/Abi1"
+                            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                            android:textSize="13sp"
+                            />
+
+                        <EditText
+                            android:id="@+id/sa_et_price"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:gravity="right|center_vertical"
+                            android:maxLength="25"
+                            android:inputType="number"
+                            android:hint="2,000"
+                            android:singleLine="true"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                            android:textColor="@color/khakestari0"
+                            android:background="@drawable/prefilter_search_edittext_back"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/main_icon_coin"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="right"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/sa_tv_longdes_limit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="@color/khakestari1"
+                            android:textSize="11sp"
+                            android:gravity="left"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:layout_marginBottom="10dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/simple_circle_red"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="توضیحات مشاوره"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/khakestari1"
+                            android:textSize="13sp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/main_heder_seach_line"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/sa_et_longdes"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:gravity="right|top"
+                            android:maxLength="500"
+                            android:maxLines="20"
+                            android:lines="6"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                            android:textColor="@color/khakestari0"
+                            android:background="@drawable/prefilter_search_edittext_back"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+<!--            page 4-->
+            <LinearLayout
+                android:id="@+id/submitadviser_step4area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:paddingRight="35dp"
+                android:paddingLeft="35dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="100"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/khakestari0"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:layout_marginRight="10dp"
+                            android:textSize="13sp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:text="حداکثر 4 عدد یک مگابایت"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/simple_circle_red"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/tire0"
+                            android:gravity="right"
+                            android:textSize="13sp"
+                            fontPath="fonts/Yekan_Bakh_Bold.ttf"
+                            android:text="مجوزها و مدارک تحصیلی"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/khakestari0"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        fontPath="fonts/Yekan_Bakh_Light.ttf"
+                        android:text="این تصاویر در اختیار کاربران قرار نخواهد گرفت"/>
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/sa_list_docs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        />
+
+
+                </LinearLayout>
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:weightSum="100"-->
+<!--                    android:paddingTop="10dp"-->
+<!--                    android:paddingBottom="10dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:paddingLeft="20dp"-->
+<!--                    android:orientation="horizontal">-->
+
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="1dp"-->
+<!--                        android:layout_height="90dp"-->
+<!--                        android:layout_weight="60"-->
+<!--                        >-->
+<!--                        <com.github.florent37.shapeofview.shapes.CircleView-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="90dp"-->
+<!--                            android:layout_weight="13"-->
+<!--                            app:shape_circle_borderColor="@color/sefid"-->
+<!--                            android:background="@color/sefid"-->
+<!--                            app:shape_circle_borderWidth="2dp">-->
+
+<!--                            <ImageView-->
+<!--                                android:id="@+id/sa_img_mainpic"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:adjustViewBounds="true"-->
+<!--                                android:src="@drawable/avatar_tmp1" />-->
+
+<!--                        </com.github.florent37.shapeofview.shapes.CircleView>-->
+
+<!--                        <net.steamcrafted.materialiconlib.MaterialIconView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="3dp"-->
+<!--                            android:scaleType="center"-->
+<!--                            android:layout_alignParentBottom="true"-->
+<!--                            android:layout_alignParentLeft="true"-->
+<!--                            app:materialIcon="camera"-->
+<!--                            app:materialIconColor="@color/tire0"-->
+<!--                            app:materialIconSize="36dp" />-->
+<!--                    </RelativeLayout>-->
+
+
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="1dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="40"-->
+<!--                        android:gravity="right"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textColor="@color/tire0"-->
+<!--                            android:textSize="9sp"-->
+<!--                            android:text="(اجباری)"/>-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textColor="@color/tire0"-->
+<!--                            android:text="عکس اصلی"/>-->
+
+<!--                    </LinearLayout>-->
+
+
+
+
+
+<!--                </LinearLayout>-->
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1px"-->
+<!--                    android:background="@color/khakestari2"-->
+<!--                    />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="100"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/khakestari0"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:textSize="13sp"
+                            android:layout_marginRight="10dp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:text="( حداکثر ۶ عدد ، یک مگابایت)"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/tire0"
+                            android:gravity="right"
+                            android:textSize="13sp"
+                            fontPath="fonts/Yekan_Bakh_Bold.ttf"
+                            android:text="تصاویر من"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/khakestari0"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        fontPath="fonts/Yekan_Bakh_Light.ttf"
+                        android:text="این عکسها برای عموم قابل مشاهده است"/>
+
+
+
+                    <HorizontalScrollView
+                        android:id="@+id/sa_sv_myimages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        android:layout_marginTop="15dp"
+
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/sa_line_myimages_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:paddingLeft="300dp"
+                            android:orientation="horizontal">
+
+
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="100"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/khakestari0"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:textSize="13sp"
+                            android:layout_marginRight="10dp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:text=" ( حداکثر۱ عدد، ده مگابایت)"/>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/tire0"
+                            android:gravity="right"
+                            android:textSize="13sp"
+                            fontPath="fonts/Yekan_Bakh_Bold.ttf"
+                            android:text="ویدیوی معرفی "/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/khakestari0"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        fontPath="fonts/Yekan_Bakh_Light.ttf"
+                        android:text="این فیلم برای عموم قابل مشاهده است"/>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        >
+
+
+
+                        <VideoView
+                            android:id="@+id/sa_videoview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/sefid"
+                            android:backgroundTint="@color/sefid"
+                            android:visibility="invisible"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/upload_frame1">
+
+
+                            <LinearLayout
+                                android:id="@+id/row_sa_docs_placeholder"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+
+                                android:gravity="center"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/main_icon_plus2"
+                                    />
+                                <TextView
+                                    android:id="@+id/row_sa_docs_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="افزودن"
+                                    android:gravity="center"
+                                    android:padding="3dp"
+                                    android:textColor="@color/khakestari0"
+                                    android:textSize="14dp"
+                                    fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                                    />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/row_sa_docs_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+
+                                />
+
+
+
+
+
+
+                        </RelativeLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <com.skydoves.elasticviews.ElasticLayout
+                android:id="@+id/sa_el_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                app:layout_scale="0.95"
+                app:layout_duration="200"
+                android:gravity="center"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:orientation="horizontal"
+                >
+
+                <com.gigamole.library.ShadowLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:sl_shadowed="true"
+                    app:sl_shadow_angle="90"
+                    app:sl_shadow_radius="10dp"
+                    app:sl_shadow_distance="10dp"
+                    app:sl_shadow_color="@color/Abi1_shadow">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/btn_back1"
+                        android:padding="20dp"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/prefilter_submit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ادامه"
+                            android:textColor="@color/sefid"
+                            fontPath="fonts/Yekan_Bakh_Bold.ttf"
+                            android:textSize="16sp"
+                            />
+
+
+                    </LinearLayout>
+
+                </com.gigamole.library.ShadowLayout>
+
+
+            </com.skydoves.elasticviews.ElasticLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+</layout>

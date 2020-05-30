@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <data>
+        <variable
+            name="settingModel"
+            type="com.nikandroid.chista.viewModels.SettingViewModel" />
+    </data>
+
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:paddingTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:paddingBottom="20dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/tire0"
+            android:textSize="18sp"
+            fontPath="fonts/Yekan_Bakh_Heavy.ttf"
+            android:text="تنظیمات"/>
+
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/setting_actionbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_icon"
+            android:background="@drawable/login_phone_edittext"
+            android:padding="10dp"
+            android:adjustViewBounds="true"
+            app:imageView_duration="200"
+            app:imageView_scale="0.85"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/setting_usersetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/main_right_icon"
+            />
+        <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:gravity="right"
+                android:textColor="@color/khakestari0"
+                fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                android:textSize="14sp"
+                android:text="تنظیمات مشخصات فردی" />
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari_20darsad"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/setting_chatsetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/main_right_icon"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/khakestari0"
+            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+            android:textSize="14sp"
+            android:text="تنظیمات چت تصویری" />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari_20darsad"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/setting_notifsetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/main_right_icon"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/khakestari0"
+            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+            android:textSize="14sp"
+            android:text="تنظیمات نوتیفیکیشن" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari_20darsad"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/setting_manage_adviser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/main_right_icon"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/khakestari0"
+            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+            android:textSize="14sp"
+            android:text="مدیریت مشاوران" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari_20darsad"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/setting_commentsetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/main_right_icon"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/khakestari0"
+            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+            android:textSize="14sp"
+            android:text="تنظیمات ثبت نظر" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari_20darsad"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/setting_clear_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/khakestari0"
+            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+            android:textSize="14sp"
+            android:text="پاک کردن تاریخچه جستجو" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+</layout>

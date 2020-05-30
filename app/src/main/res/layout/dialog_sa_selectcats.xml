@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@drawable/dialog_price_background"
+    android:paddingBottom="30dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="7dp"
+        android:background="@drawable/dialog_prefilter_price_headerline"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/submit_adviser_actionbararea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/dialog_sa_selectcats_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/tire0"
+            android:textSize="14sp"
+            fontPath="fonts/Yekan_Bakh_Heavy.ttf"
+            android:text="ثبت نام به عنوان مشاور"/>
+
+            <ImageView
+                android:id="@+id/dialog_sa_selectcats_backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_icon_arrowright2"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dialog_sa_selectcats_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:pickerui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:gravity="center"
+    android:background="@drawable/dialog_price_background"
+    android:paddingBottom="30dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="7dp"
+        android:background="@drawable/dialog_prefilter_price_headerline"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/dialog_bdate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/tire0"
+            android:textSize="14sp"
+            fontPath="fonts/Yekan_Bakh_Heavy.ttf"
+            android:text="تاریخ تولد"/>
+
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/dialog_bdate_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_icon_arrowright2"
+            app:imageView_duration="200"
+            app:imageView_scale="0.9"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <com.nikandroid.chista.Utils.StringChooser
+            android:id="@+id/dialog_bdate_sal"
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:selectedColor="@color/Abi1"
+            app:notSelectedColor="@color/khakestari3"
+            app:selectedSize="32dp"
+            app:notSelectedSize="20dp"
+            app:notSelectedOpacity="1"
+            />
+        <com.nikandroid.chista.Utils.StringChooser
+            android:id="@+id/dialog_bdate_mah"
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:selectedColor="@color/Abi1"
+            app:notSelectedColor="@color/khakestari3"
+            app:selectedSize="32dp"
+            app:notSelectedSize="20dp"
+            app:notSelectedOpacity="1"
+            />
+        <com.nikandroid.chista.Utils.StringChooser
+            android:id="@+id/dialog_bdate_rooz"
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:selectedColor="@color/Abi1"
+            app:notSelectedColor="@color/khakestari3"
+            app:selectedSize="32dp"
+            app:notSelectedSize="20dp"
+            app:notSelectedOpacity="1"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <com.skydoves.elasticviews.ElasticLayout
+        android:id="@+id/dialog_bdate_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_scale="0.95"
+        app:layout_duration="200"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <com.gigamole.library.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:sl_shadowed="true"
+            app:sl_shadow_angle="90"
+            app:sl_shadow_radius="10dp"
+            app:sl_shadow_distance="10dp"
+            app:sl_shadow_color="@color/Abi1_shadow">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/btn_back1"
+                android:padding="15dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تایید"
+                    android:textColor="@color/sefid"
+                    fontPath="fonts/Yekan_Bakh_Bold.ttf"
+                    android:textSize="16sp"
+                    />
+
+
+            </LinearLayout>
+
+        </com.gigamole.library.ShadowLayout>
+
+
+    </com.skydoves.elasticviews.ElasticLayout>
+
+
+
+
+</LinearLayout>

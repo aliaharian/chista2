@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#304FFE</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorPrimaryLight">#42A5F5</color>
+
+
+
+    <color name="colorAccent">#536DFE</color>
+    <color name="colorGray">#ffd6d7d7</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="Divider">#bdbdbd</color>
+
+    <color name="Abi0">#0D47A1</color>
+    <color name="Abi1">#4264fb</color>
+    <color name="Abi2">#536DFE</color>
+    <color name="Abi3">#42A5F5</color>
+    <color name="Abi4">#81D4FA</color>
+    <color name="Abi5">#B3E5FC</color>
+    <color name="Abi6">#B9C6FF</color>
+    <color name="Abi7">#393D69</color>
+
+    <color name="Abi1_shadow">#354264fb</color>
+    <color name="Abi1_4per">#094264fb</color>
+    <color name="Abi1_10per">#404264fb</color>
+    <color name="Abi6_10per">#16B9C6FF</color>
+
+
+    <color name="Card_1">#ecf0ff</color>
+
+    <color name="sabz0">#8BC34A</color>
+    <color name="sabz1">#64DD17</color>
+    <color name="sabz2">#4caf50</color>
+    <color name="sabz3">#00C853</color>
+
+    <color name="narenji">#FF7854</color>
+    <color name="zard">#FFC452</color>
+    <color name="banafsh">#9c27b0</color>
+    <color name="zard2">#D3B375</color>
+
+    <color name="zard_10darsad">#15FFC452</color>
+    <color name="zard2_23darsad">#40FFC452</color>
+
+
+    <color name="khakestari">#BDC8D6</color>
+    <color name="khakestari0">#536B88</color>
+    <color name="khakestari1">#92A4BB</color>
+    <color name="khakestari2">#9E9E9E</color>
+    <color name="khakestari3">#D5DFEB</color>
+    <color name="khakestari4">#555555</color>
+    <color name="khakestari5">#c0c0c0</color>
+    <color name="khakestari6">#efefef</color>
+
+
+    <color name="khakestari0_shadow">#35536B88</color>
+    <color name="khakestari_15darsad">#25BDC8D6</color>
+    <color name="khakestari_20darsad">#35BDC8D6</color>
+    <color name="khakestari_30darsad">#45BDC8D6</color>
+    <color name="khakestari_50darsad">#80BDC8D6</color>
+    <color name="khakestari3_27darsad">#40D5DFEB</color>
+    <color name="khakestari3_15darsad">#22D5DFEB</color>
+    <color name="khakestari1_10darsad">#1592A4BB</color>
+
+
+    <color name="border_1">#50BDC8D6</color>
+
+
+
+    <color name="siyah">#000000</color>
+    <color name="sefid">#ffffff</color>
+    <color name="ghermez">#f44336</color>
+    <color name="ghermez2">#FF527A</color>
+    <color name="firoozei">#009688</color>
+    <color name="firoozei1">#01bccb</color>
+    <color name="firoozei2">#009688</color>
+    <color name="firoozei3">#00DBB5</color>
+    <color name="ghahvei">#795548</color>
+
+    <color name="tire0">#1A172D</color>
+    <color name="tire1">#37474F</color>
+    <color name="tire2">#455A64</color>
+    <color name="tire3">#455A64</color>
+
+
+
+    <color name="soorati">#e91e63</color>
+    <color name="golding">#FFD700</color>
+
+
+
+
+    <integer-array name="progres_colors">
+        <item>@color/sabz2</item>
+        <item>@color/ghermez</item>
+        <item>@color/golding</item>
+        <item>@color/Abi0</item>
+    </integer-array>
+
+
+
+</resources>

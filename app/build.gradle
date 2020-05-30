@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    dataBinding {
+        enabled = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.nikandroid.chista"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 5
+        multiDexEnabled true
+        versionName "1.5"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    configurations {
+        implementation.exclude group: 'org.jetbrains', module: 'annotations'
+
+    }
+    useLibrary 'org.apache.http.legacy'
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.airbnb.android:lottie:3.1.0'
+    implementation 'com.github.thomper:sweet-alert-dialog:v1.4.0'
+    implementation 'net.steamcrafted:materialiconlib:1.1.5'
+    implementation 'devlight.io:navigationtabbar:1.2.5'
+    implementation 'me.relex:circleindicator:1.2.1@aar'
+
+
+    implementation 'com.github.florent37:expectanim:1.0.7'
+    implementation "com.github.kubode.wiggle:framelayout:1.3.0"
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.devlight.shadowlayout:library:1.0.2'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+    implementation "com.github.skydoves:elasticviews:2.0.7"
+    implementation 'com.github.FlyingPumba:SimpleRatingBar:v0.1.5'
+    implementation 'com.github.florent37:shapeofview:1.0.7'
+
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.2.71'
+
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    implementation 'com.astuetz:pagerslidingtabstrip:1.0.1'
+
+    implementation 'com.github.devlight:infinitecycleviewpager:1.0.2'
+    implementation 'com.crowdfire.cfalertdialog:cfalertdialog:1.3.1'
+
+    implementation 'com.github.jgabrielfreitas:BlurImageView:1.0.1'
+    implementation 'com.github.Innovattic:range-seek-bar:v1.0.6'
+    implementation "com.github.skydoves:powermenu:2.1.2"
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient-android', version: '4.3.5.1'
+    implementation('org.apache.httpcomponents:httpmime:4.3') {
+        exclude module: "httpclient"
+    }
+    implementation 'com.github.glomadrian:Grav:1.1'
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+    implementation('com.github.Inconnu08:android-ratingreviews:1.2.0')
+            {
+                exclude group: 'org.jetbrains', module: 'annotations'
+            }
+
+    implementation 'com.github.yalantis:ucrop:2.2.3-native'
+    implementation 'com.github.jkwiecien:EasyImage:3.0.1'
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient-android', version: '4.3.5.1'
+    implementation('org.apache.httpcomponents:httpmime:4.3') {
+        exclude module: "httpclient"
+    }
+    implementation 'com.github.aliab:Persian-Date-Picker-Dialog:1.5.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'com.crowdfire.cfalertdialog:cfalertdialog:1.1.0'
+    implementation 'net.alhazmy13.MediaPicker:libary:2.4.4'
+    implementation 'com.ogaclejapan.smarttablayout:library:2.0.0@aar'
+    implementation 'com.ogaclejapan.smarttablayout:utils-v4:2.0.0@aar'
+    implementation 'com.github.devlight.shadowlayout:library:1.0.2'
+    implementation 'com.github.marcoscgdev:DialogSheet:2.0.9'
+    implementation 'com.github.fuzz-productions:RatingBar:1.0.5'
+    implementation 'com.sasank.roundedhorizontalprogress:roundedhorizontalprogress:1.0.1'
+    implementation 'com.aotasoft.taggroup:library:1.6'
+
+
+    implementation 'com.ethanhua:skeleton:1.1.2'
+    implementation 'io.supercharge:shimmerlayout:2.1.0'
+    implementation("com.wefika:flowlayout:0.4.1") {
+        exclude group: 'com.intellij', module: 'annotations'
+    }
+    implementation 'com.github.samanzamani.persiandate:PersianDate:0.8'
+    implementation 'com.github.volobot-admin:String-Picker-Android:v1.3'
+
+}

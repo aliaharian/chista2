@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Fav">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:paddingTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/tire0"
+            android:textSize="18sp"
+            fontPath="fonts/Yekan_Bakh_Heavy.ttf"
+            android:text="علاقه مندی ها"/>
+
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/fav_actionbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_icon"
+            android:background="@drawable/login_phone_edittext"
+            android:padding="10dp"
+            android:adjustViewBounds="true"
+            app:imageView_duration="200"
+            app:imageView_scale="0.85"/>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fav_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/fav_novaluearea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_image_novalue1"
+                android:adjustViewBounds="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="چیزی پیدا نشد"
+                android:textColor="@color/khakestari"
+                android:textSize="14sp"
+                fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

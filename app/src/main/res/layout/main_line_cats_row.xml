@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:background="@drawable/main_cat_card1"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_lines_cat_row_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:src="@drawable/autism"/>
+
+
+        </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/main_lines_cat_row_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/khakestari0"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        fontPath="fonts/Yekan_Bakh_Regular.ttf"
+        android:text="روانشناسی"/>
+
+
+</LinearLayout>

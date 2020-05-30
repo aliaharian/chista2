@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/prefilter_row_range_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tire0"
+        android:gravity="right"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="قیمت"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <com.innovattic.rangeseekbar.RangeSeekBar
+            android:id="@+id/prefilter_row_range_range"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            app:rsb_trackSelectedColor="@color/colorAccent"
+            app:rsb_trackColor="@color/khakestari2"
+            app:rsb_trackSelectedThickness="5dp"
+            app:rsb_trackRoundedCaps="true"
+            app:rsb_minThumbDrawable="@drawable/circle_range"
+            app:rsb_maxThumbDrawable="@drawable/circle_range"
+            app:rsb_maxThumbOffsetHorizontal="5dp"
+            app:rsb_minThumbOffsetHorizontal="-5dp"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/prefilter_row_range_min"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tire0"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="12"
+            />
+
+        <TextView
+            android:id="@+id/prefilter_row_range_max"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tire0"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="25"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari1"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+</LinearLayout>

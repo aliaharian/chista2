@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:minWidth="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dialog_setting_editbox_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/tire0"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:text="نام ویرایش"/>
+
+                <EditText
+                    android:id="@+id/dialog_setting_editbox_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/tire0"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/dialog_setting_editbox_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center"
+                android:background="@drawable/prefilter_submit_back"
+                android:layout_alignParentBottom="true"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="4dp"
+                android:layout_margin="10dp"
+                android:paddingTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ثبت"
+                    fontPath="fonts/sansB.ttf"
+                    android:textSize="12sp"
+                    android:textColor="@color/sefid"
+                    />
+
+                <net.steamcrafted.materialiconlib.MaterialIconView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    app:materialIcon="rocket"
+                    app:materialIconColor="@color/sefid"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    app:materialIconSize="16dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

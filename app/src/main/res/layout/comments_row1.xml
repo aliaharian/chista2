@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:paddingTop="10dp"
+    android:gravity="right"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:id="@+id/mycomments_row_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:scaleType="center"
+                app:materialIcon="dots_vertical"
+                app:materialIconColor="@color/khakestari0"
+                app:materialIconSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mycomments_row_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="نام نظر دهنده"
+                fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                android:textSize="14sp"
+                android:textColor="@color/tire0"
+                />
+            <com.fuzzproductions.ratingbar.RatingBar
+                android:id="@+id/mycomments_row_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:minAllowedStars="1"
+                app:numStars="5"
+                app:starSize="10dp"
+                app:rating="3"
+                app:isIndicator="false"
+                app:emptyDrawable="@drawable/main_icon_star1"
+                app:filledDrawable="@drawable/main_icon_star2"
+                app:starSpacing="2dp"
+
+                />
+
+        </LinearLayout>
+
+        <com.github.florent37.shapeofview.shapes.CircleView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:elevation="1dp"
+            app:shape_circle_borderColor="@color/khakestari1"
+            app:shape_circle_borderWidth="2px">
+            <com.github.florent37.shapeofview.shapes.CircleView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shape_circle_borderColor="@color/sefid"
+                app:shape_circle_borderWidth="7px">
+                <ImageView
+                    android:id="@+id/mycomments_row_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/moshaver1" />
+            </com.github.florent37.shapeofview.shapes.CircleView>
+        </com.github.florent37.shapeofview.shapes.CircleView>
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/mycomments_row_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="text"
+        android:gravity="right"
+        android:textSize="12sp"
+        fontPath="fonts/Yekan_Bakh_Light.ttf"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/khakestari0"
+        />
+
+
+
+
+
+</LinearLayout>

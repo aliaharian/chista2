@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/prefilter_row_select1_ch1"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:layout_marginRight="20dp"
+            android:text="--"/>
+
+        <CheckBox
+            android:id="@+id/prefilter_row_select1_ch2"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="--"/>
+
+        <TextView
+            android:id="@+id/prefilter_row_select1_name"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:textColor="@color/tire0"
+            android:text="-------"
+            android:gravity="right"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari1"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</LinearLayout>

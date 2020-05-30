@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <net.steamcrafted.materialiconlib.MaterialIconView
+        android:id="@+id/spinner_row1_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        app:materialIcon="chevron_left"
+        android:layout_marginLeft="10dp"
+        app:materialIconColor="@color/tire1"
+        android:visibility="invisible"
+        app:materialIconSize="24dp" />
+
+    <TextView
+        android:id="@+id/spinner_row1_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="10dp"
+        android:textColor="@color/tire0"
+        android:text="test"/>
+
+</LinearLayout>

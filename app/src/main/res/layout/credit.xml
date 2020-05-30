@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <data>
+        <variable
+            name="creditModel"
+            type="com.nikandroid.chista.viewModels.CreditViewModel" />
+    </data>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="@color/sefid"
+        tools:context=".Activity.Credit">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/tire0"
+                android:textSize="18sp"
+                fontPath="fonts/Yekan_Bakh_Heavy.ttf"
+                android:text="اعتبار" />
+
+            <com.skydoves.elasticviews.ElasticImageView
+                android:id="@+id/credit_actionbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_icon"
+                android:background="@drawable/login_phone_edittext"
+                android:padding="10dp"
+                android:adjustViewBounds="true"
+                app:imageView_duration="200"
+                app:imageView_scale="0.85"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/credit_tileback1"
+            android:layout_marginTop="20dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="موجودی شما"
+                        android:gravity="right"
+                        android:textSize="15sp"
+                        fontPath="fonts/Yekan_Bakh_Regular.ttf"
+                        android:textColor="@color/Abi1"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="تومان"
+                            android:gravity="right"
+                            android:textSize="17sp"
+                            android:layout_marginRight="10dp"
+                            fontPath="fonts/Yekan_Bakh_Light.ttf"
+                            android:textColor="@color/siyah"/>
+
+                        <TextView
+                            android:id="@+id/credit_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25000"
+                            android:gravity="right"
+                            android:textSize="26sp"
+                            fontPath="fonts/Yekan_Bakh_Heavy.ttf"
+                            android:textColor="@color/siyah"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/main_icon_wallet2"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <com.skydoves.elasticviews.ElasticLayout
+                    android:id="@+id/credit_bardasht"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_duration="200"
+                    android:layout_weight="1"
+                    android:layout_marginRight="15dp"
+                    app:layout_scale="0.95">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/btn_back4"
+                        android:padding="12dp"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="واریز به بانک"
+                            android:textColor="@color/Abi1"
+                            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                            android:textSize="13sp"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/main_icon_mines"/>
+
+
+                    </LinearLayout>
+
+                </com.skydoves.elasticviews.ElasticLayout>
+
+                <com.skydoves.elasticviews.ElasticLayout
+                    android:id="@+id/credit_variz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_duration="200"
+                    android:layout_weight="1"
+                    app:layout_scale="0.95">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:background="@drawable/btn_back1"
+                            android:padding="12dp"
+                            android:gravity="center"
+                            >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="افزایش اعتبار"
+                                android:textColor="@color/sefid"
+                                fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                                android:textSize="13sp"
+                                />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/main_icon_plus"/>
+
+
+                        </LinearLayout>
+
+
+
+                </com.skydoves.elasticviews.ElasticLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <com.skydoves.elasticviews.ElasticLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_phone_edittext"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/khakestari0"
+                        android:textSize="11sp"
+                        fontPath="fonts/Yekan_Bakh_Light.ttf"
+                        android:text="محدود سازی" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/main_icon_filter2"
+                        android:adjustViewBounds="true"
+                        />
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </com.skydoves.elasticviews.ElasticLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/khakestari0"
+                android:textSize="13sp"
+                fontPath="fonts/Yekan_Bakh_Bold.ttf"
+                android:text="لیست تراکنش ها" />
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"/>
+
+</LinearLayout>
+
+</layout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/category_tag_row1_ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/z_catgory_tag_back1"
+    android:layout_marginRight="1dp"
+    android:layout_marginLeft="1dp"
+
+    android:layout_marginBottom="2dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/row_tags_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/sefid"
+        android:textSize="9sp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+
+</LinearLayout>

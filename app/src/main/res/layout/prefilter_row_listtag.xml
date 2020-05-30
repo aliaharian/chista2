@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/prefilter_row_listtag_name"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="TextView"
+            android:textColor="@color/khakestari0"
+            android:textSize="14sp"
+            fontPath="fonts/Yekan_Bakh_Medium.ttf"
+            />
+
+        <CheckBox
+            android:id="@+id/prefilter_row_listtag_check"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:theme="@style/checkBoxStyle1"
+            app:srcCompat="@drawable/autism" />
+
+        <ImageView
+            android:id="@+id/prefilter_row_listtag_icon"
+            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            app:srcCompat="@drawable/main_icon_allsubcat" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari_20darsad"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</LinearLayout>

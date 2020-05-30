@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/dialog_prefilter_price_row_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="مرد"
+        android:textColor="@color/khakestari0"
+        android:layout_marginRight="10dp"
+        android:textSize="14sp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="30dp"
+        fontPath="fonts/Yekan_Bakh_Medium.ttf"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/khakestari_20darsad"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        />
+
+
+
+
+</LinearLayout>

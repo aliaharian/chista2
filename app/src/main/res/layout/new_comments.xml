@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sefid"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/prefilter_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/tire0"
+            android:textSize="18sp"
+            fontPath="fonts/Yekan_Bakh_Heavy.ttf"
+            android:text="ثبت نظر"/>
+
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/new_comments_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_icon"
+            android:background="@drawable/login_phone_edittext"
+            android:padding="10dp"
+            android:adjustViewBounds="true"
+            app:imageView_duration="200"
+            app:imageView_scale="0.85"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/newcomment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/khakestari0"
+        android:layout_marginTop="10dp"
+        android:text="به سید علی فلانی نظر میدهم"
+        android:textSize="14sp"
+        fontPath="fonts/Yekan_Bakh_Heavy.ttf"
+        android:gravity="center"/>
+
+    <com.fuzzproductions.ratingbar.RatingBar
+        android:id="@+id/newcomment_stars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        app:minAllowedStars="0"
+        app:numStars="5"
+        app:starSize="38dp"
+        app:rating="1"
+        app:isIndicator="false"
+        app:emptyDrawable="@drawable/main_icon_star3"
+        app:filledDrawable="@drawable/main_icon_star2"
+        app:selectTheTappedRating="false"
+        android:clickable="false"
+        app:starSpacing="15dp"/>
+
+
+    <TextView
+        android:id="@+id/newcomment_starstitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/khakestari0"
+        android:text="خیلی ضعیف"
+        android:textSize="13sp"
+        fontPath="fonts/Yekan_Bakh_Bold.ttf"
+        android:gravity="center"/>
+
+
+
+
+    <EditText
+        android:id="@+id/newcomment_textcm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:gravity="right|top"
+        android:textSize="13sp"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        fontPath="fonts/Yekan_Bakh_Regular.ttf"
+        android:hint="ثبت نظر (به عموم نمایش داده خواهد شد)"
+        android:background="@drawable/newcomment_text_kadr"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            fontPath="fonts/Yekan_Bakh_Heavy.ttf"
+            android:textColor="@color/khakestari0"
+            android:text="نظر به صورت ناشناس"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.skydoves.elasticviews.ElasticLayout
+            android:id="@+id/newcomment_cancele"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            app:layout_duration="200"
+            android:layout_weight="1"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_scale="0.95">
+
+            <com.gigamole.library.ShadowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sl_shadowed="false"
+                app:sl_shadow_angle="90"
+                app:sl_shadow_radius="10dp"
+                app:sl_shadow_distance="8dp"
+                app:sl_shadow_color="@color/Abi1_shadow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:gravity="center"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="بعدا رای میدهم"
+                        android:textColor="@color/khakestari1"
+                        fontPath="fonts/Yekan_Bakh_Medium.ttf"
+                        android:textSize="14sp"
+                        />
+
+                </LinearLayout>
+
+            </com.gigamole.library.ShadowLayout>
+
+
+        </com.skydoves.elasticviews.ElasticLayout>
+
+
+        <com.skydoves.elasticviews.ElasticLayout
+            android:id="@+id/newcomment_submit"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            app:layout_duration="200"
+            android:layout_weight="1"
+            android:layout_marginRight="-10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_scale="0.95">
+
+            <com.gigamole.library.ShadowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sl_shadowed="true"
+                app:sl_shadow_angle="90"
+                app:sl_shadow_radius="10dp"
+                app:sl_shadow_distance="8dp"
+                app:sl_shadow_color="@color/Abi1_shadow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/btn_back1"
+                    android:padding="12dp"
+                    android:gravity="center"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تایید"
+                        android:textColor="@color/sefid"
+                        fontPath="fonts/Yekan_Bakh_Bold.ttf"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+            </com.gigamole.library.ShadowLayout>
+
+
+        </com.skydoves.elasticviews.ElasticLayout>
+
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/newcomment_prog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>
